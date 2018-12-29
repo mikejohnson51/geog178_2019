@@ -10,7 +10,7 @@
     <link href="css/index.css" rel="stylesheet">
     <style>
       body {
-        background: url('./resources/lake.jpg') no-repeat center center fixed;
+        background: url('./resources/osm.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -22,7 +22,7 @@
         line-height: 1.5;
         color: #605e5e;
         text-align: left;
-        background-color: #fff}
+        background-color: black}
       .container {
           max-width: 1000px;
           padding: 0px 15px 30px 15px;
@@ -50,11 +50,22 @@
       .title,
       .title span { 
         color: darkblue;
-        padding-bottom: 1em}
+        padding-bottom: 1em;
+        margin-bottom: 5px;
+        }
+      .title:after{
+         background-color: darkblue;
+          content: " ";
+          display: block;
+          height: 4px;
+          margin: 15px auto 0;
+        }
       .title span {font-size: 40%}
       .weekly_info {font-size: 1.5rem}
       .weekly_info p {margin: .5em 0 1em 4rem}
-      .weekly_info h4 {margin: .5em 0 0 3rem}
+      .weekly_info h4 {margin: .5em 0 0 3rem;
+        font-size:1.75rem; 
+        }
       .weekly_info a {color: #de5021}
       .weekly_info a[href="javascript:void(0)"] {
           color: #ccc;
