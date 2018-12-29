@@ -9,3 +9,8 @@ University of California, Santa Barbara. The webpage archves links to the weekly
 
 **Teaching Assistant:** [Mike Johnson](http://mikejohnson51.github.io/)
 
+### Questions
+
+Questions for this section can be communally answered using Github Issues and the tag
+
+
