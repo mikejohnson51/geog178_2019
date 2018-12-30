@@ -7,105 +7,151 @@
     <meta name="Mike Johnson" content="">
     <link rel="icon" href="favicon.ico">
     <title>geog178</title>
-    <link href="css/index.css" rel="stylesheet">
     <style>
-      body {
-        background: url('./resources/osm.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        margin: 0;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #605e5e;
-        text-align: left;
-        background-color: black}
-      .container {
-          max-width: 1000px;
-          padding: 0px 15px 30px 15px;
-          margin: 0 auto}
-      .white_bg {
-          padding: 3rem;
-          margin: .25rem 0;
-          background-color: #fff;
-          opacity: .9}
-      p {
-        margin: 1em 0 2em 2em;
-        max-width: 600px;
-        text-align: justify; }
-      h2, h3, h4 {
-        margin: 0 0 .5rem 0;
-        font-weight: 500;
-        line-height: 1.2}
-      h2 {font-size: 2rem}
-      h3 {font-size: 1.75rem}
-      h4 {margin-left: 2rem}
-      a { 
-        color: #007bff;
-        text-decoration: none}
-      a:hover {color: #0056b3}
-      .title,
-      .title span { 
-        color: darkblue;
-        padding-bottom: 1em;
-        margin-bottom: 5px;
+        body {
+            background: url('./resources/osm.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            margin: 0;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #605e5e;
+            text-align: left;
+            background-color: #343331}
+        .container {
+            max-width: 1000px;
+            padding: 30px 15px 30px 15px;
+            margin: 0 auto}
+        .white_bg {
+            padding: 3rem;
+            margin: .25rem 0;
+            background-color: #fff;
+            opacity: .9}
+        p {
+            margin: 1em 0 2em 2em;
+            max-width: 600px}
+        h2, h3, h4 {
+            margin: 0 0 .5rem 0;
+            font-weight: 500;
+            line-height: 1.2}
+        h2 {font-size: 2.25rem}
+        h3 {font-size: 2rem}
+        .clear { clear:both;}
+        h4 {margin-left: 2rem}
+        a { 
+            color: #007bff;
+            text-decoration: none}
+            a:hover {color: #0056b3}
+        hr {
+            background-color: darkblue;
+            content: " ";
+            display: block;
+            height: 4px;
+            margin: 10px auto 40px}
+        .weekly_info {font-size: 1.5rem}
+        .weekly_info p {margin: .5em 0 1em 4rem}
+        .weekly_info h4 {
+            margin: .5em 0 0 3rem;
+            font-size:1.75rem}
+        .weekly_info a {color: #ffc107}
+        .weekly_info a:hover {color: #007bff}
+        .weekly_info a[href="javascript:void(0)"] {
+            color: #ccc;
+            cursor: default}  
+        .header {
+            color: darkblue;
+            display: table;
+            margin-bottom: 5px;
+            float: left}
+        .subheader {  
+            display: table-cell;
+            vertical-align: middle;
+            text-align: left;    
+            font-size: 1rem;
+            line-height: 1rem}
+        .main_header {
+            font-size: 2.25rem;
+            line-height: 2.25rem;
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: .5rem}
+        .subheader > span {display: block}
+        .description {text-align: justify;}
+        @media only screen and (max-width: 564px) {
+            .main_header {font-size: 2rem;}
+            .subheader {font-size: 1rem;}
         }
-      .title:after{
-         background-color: darkblue;
-          content: " ";
-          display: block;
-          height: 4px;
-          margin: 15px auto 0;
+        @media only screen and (max-width: 536px) {
+            .main_header,
+            .header {display: block;}
+            .main_header {padding-bottom: .2rem;}
+            .subheader span {display: inline;}
         }
-      .title span {font-size: 40%}
-      .weekly_info {font-size: 1.5rem}
-      .weekly_info p {margin: .5em 0 1em 4rem}
-      .weekly_info h4 {margin: .5em 0 0 3rem;
-        font-size:1.75rem; 
+        /* Phones and small tablets */
+        @media only screen and (max-width: 767px) {
+            .white_bg {padding: 1rem;}
+            .description {text-align: left}
+            p {
+                font-size: 90%;
+                margin: 1em 0 1em 1em;
+            }
+            h2 {font-size: 2.25rem; color: red}
+            h3 {font-size: 1.5rem}
+            .weekly_info {font-size: 1rem}
+            .weekly_info h4 {
+                margin-left: 1rem;
+                font-size:1.2rem;
+            }
+            .weekly_info p {margin-left: 2rem}
         }
-      .weekly_info a {color: #de5021}
-      .weekly_info a[href="javascript:void(0)"] {
-          color: #ccc;
-          cursor: default}
     </style>
   </head>
 
   <body>
     <!-- Page Content -->
     <main class="container" role="main">
-      <div class="white_bg">
-        <h2 class="title">GEOG 178/258: <span>Conceptual Modeling and Programing for the Geo-Sciences</span></h2>
+        
+        <!-- Header -->
+        <div class="white_bg">
+            <div class="header"> 
+                <span class="main_header">GEOG 178/258:</span>
+                <div class="subheader">
+                    <span>Conceptual Modeling and</span>
+                    <span>Programing for the Geo-Sciences</span>
+                </div>
+            </div>
+        <hr class="clear">
+     
         <!-- 1. Course Info -->
-        <h3>1. Course Info</h3>
+        <h3 >Course Info</h3>
         <p>
-          <strong>Class Name: </strong>Conceptual Modeling and Programing for the Geo-Sciences<br>
-          <strong>Course: </strong>GEOG 178/258<br>
-          <strong>Term: </strong>Winter Quarter 2019<br>
+          <strong>Term: </strong>Winter 2019<br>
         </p>
-        <p>
-          <strong>Description: </strong>A project-based course introducing major conceptual modeling paradigms and object-oriented programming from a Geoinformatics perspective. The class is intended for undergraduate students from Geography and the broader Geo-Sciences who have limited (or no previous) experience in software engineering.
+        <p class="description">
+          <strong>Description: </strong>A project-based course introducing major conceptual modeling paradigms and object-oriented programming from a Geoinformatics perspective. The class is intended for undergraduate students from Geography and the broader Geo-Sciences who have limited (or no previous) experience in software engineering. GEOG 178 is the undergraduate portion of the class while GEOG 258 is the graduate section.
         </p>
 
         <!-- 2. Instructor Info -->
-        <h3>2. Instructor Info</h3>
+<!--        <h3>2. Instructor Info</h3>-->
         <p>
-          <strong>Instructor:</strong> Krzysztof Janowicz<br>
+          <strong>Instructor:</strong> <a href="https://geog.ucsb.edu/~jano/" target="_blank">Krzysztof Janowicz</a><br>
           <strong>Office Location:</strong> 4830 Ellison Hall<br>
           <strong>Office Hours:</strong> TBA<br>
           <strong>Email:</strong><a href="mailto:jano@geog.ucsb.edu"> jano@ucsb.edu</a>
         </p>
         <p>
-          <strong>TA:</strong> Mike Johnson<br>
+          <strong>TA:</strong> <a href="https://mikejohnson51.github.io/" target="_blank">Mike Johnson</a><br>
           <strong>Office Location:</strong> 1715 Ellison Hall<br>
           <strong>Office Hours:</strong> Thursday 3:00 - 5:00<br>
           <strong>Email:</strong><a href="mailto:jmj00@ucsb.edu"> jmj00@ucsb.edu</a>
         </p>
 
         <!-- 3. Weekly Info: -->
-        <h3>3. Weekly Info:</h3>
+        <h3>Weekly Info:</h3>
         <div class="weekly_info">
           <!-- Week 1 -->
             <h4>Week 1: Installs</h4>
