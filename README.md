@@ -3,7 +3,9 @@
 ### Winter 2019 *(January 7th - March 22nd 2019)*
 
 This is the section [website](https://mikejohnson51.github.io/geog178) for Geography 178/258, *Conceptual Modeling and Programing for the Geo-Sciences*, offered at the 
-University of California, Santa Barbara. The webpage archves links to the weekly section slides, examples, downloads, and other useful info.
+University of California, Santa Barbara. The webpage archives links to the weekly section slides, examples, downloads, and other useful info.
+
+To get updates to this repo you can 'star' or 'watch' the repo.
 
 **Primary Instructor:** [Kyrstof Janowiz](https://geog.ucsb.edu/~jano/)
 
@@ -11,6 +13,6 @@ University of California, Santa Barbara. The webpage archves links to the weekly
 
 ### Questions
 
-Questions for this section can be communally answered using Github Issues and the tag
+Questions for this section can be communally answered using Github Issues and the tag "Help"
 
 
