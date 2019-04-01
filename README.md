@@ -7,7 +7,7 @@ University of California, Santa Barbara. The webpage archives links to the weekl
 
 To get updates to this repo you can 'star' or 'watch'.
 
-**Primary Instructor:** [Kyrstof Janowiz](https://geog.ucsb.edu/~jano/)
+**Primary Instructor:** [Krzysztof Janowicz](https://geog.ucsb.edu/~jano/)
 
 **Teaching Assistant:** [Mike Johnson](http://mikejohnson51.github.io/)
 
